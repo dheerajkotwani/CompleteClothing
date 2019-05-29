@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:cardCornerRadius="12dp"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/clothing10"
+        android:scaleType="centerCrop"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <Button
+            android:id="@+id/button_started"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="LET'S GET STARTED"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="40dp"
+            android:background="@color/orange"
+            android:paddingRight="50dp"
+            android:paddingLeft="50dp"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:elevation="@dimen/cardview_compat_inset_shadow"
+            android:fontFamily="@font/roboto_light"/>
+
+
+        <TextView
+            android:id="@+id/fashion_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="213dp"
+            android:fontFamily="@font/youth_touch"
+            android:text="Compete Clothing"
+            android:textColor="@color/white"
+            android:textSize="80sp"
+            android:textStyle="italic" />
+
+
+        <TextView
+            android:id="@+id/latest_stuff"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@id/button_started"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="86dp"
+            android:layout_marginBottom="134dp"
+            android:fontFamily="@font/roboto_regular"
+            android:text="Get all the latest stuff!"
+            android:textColor="@color/white"
+            android:textSize="18dp" />
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>
