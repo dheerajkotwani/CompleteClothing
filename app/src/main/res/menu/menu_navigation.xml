@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group
+        android:id="@+id/group1">
+    <item
+        android:id="@+id/home"
+        android:title="Home"
+        android:icon="@drawable/ic_home"
+        />
+    <item
+        android:id="@+id/shop"
+        android:title="Shop"
+        android:icon="@drawable/shopping_cart"/>
+    <item
+        android:id="@+id/reserved"
+        android:title="Reserved"
+        android:icon="@drawable/layers"/>
+    <item
+        android:id="@+id/favourite"
+        android:title="Favourite"
+        android:icon="@drawable/favourite_voilet"/>
+    </group>
+    <item
+        android:id="@+id/settings"
+        android:title="Settings"
+        android:icon="@drawable/settings"/>
+    <item
+        android:id="@+id/share"
+        android:title="Share"
+        android:icon="@drawable/share"/>
+    <item
+        android:id="@+id/logout"
+        android:title="Logout"
+        android:icon="@drawable/arrow_back"/>
+
+
+
+</menu>
