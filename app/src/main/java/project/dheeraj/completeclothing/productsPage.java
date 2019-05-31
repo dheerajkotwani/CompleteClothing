@@ -11,6 +11,8 @@ import android.os.Handler;
 import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
+import android.view.View;
+import android.widget.TextView;
 import android.widget.Toast;
 
 public class productsPage extends AppCompatActivity {
@@ -18,11 +20,14 @@ public class productsPage extends AppCompatActivity {
     private DrawerLayout mDrawerLayout;
     private ActionBarDrawerToggle mToggle;
     private SwipeRefreshLayout mSwipeLayout;
+    private TextView shopNowText;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_products_page);
+
+        shopNowText = findViewById(R.id.shop_now);
 
         mDrawerLayout = findViewById(R.id.mDrawerLayout);
         mToggle = new ActionBarDrawerToggle(this,mDrawerLayout,R.string.open,R.string.close);
@@ -34,28 +39,16 @@ public class productsPage extends AppCompatActivity {
         mToggle.syncState();
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
         getSupportActionBar().setHomeButtonEnabled(true);
-//
-//        mSwipeLayout.setOnRefreshListener(new SwipeRefreshLayout.OnRefreshListener() {
-//            @Override
-//            public void onRefresh() {
-//                new Handler().postDelayed(new Runnable() {
-//                    @Override
-//                    public void run() {
-//                        Thread Background = new Thread() {
-//                            public void run() {
-//                                try {
-//                                    sleep(1500);
-//                                    mSwipeLayout.setRefreshing(false);
-//                                    finish();
-//                                } catch (InterruptedException e) {
-//                                    e.printStackTrace();
-//                                }
-//                            }
-//                        };
-//                    }
-//                },1500 );
-//            }
-//        });
+
+
+        shopNowText.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(productsPage.this,home.class);
+                startActivity(intent);
+            }
+        });
+
    }
 
     @Override
@@ -79,14 +72,7 @@ public class productsPage extends AppCompatActivity {
                 Toast.makeText(this, "Cart", Toast.LENGTH_SHORT).show();
                 break;
 
-//            case R.id.settings:
-//                Toast.makeText(this, "Settings", Toast.LENGTH_SHORT).show();
-//                break;
-//            default:
-//                mToggle = new ActionBarDrawerToggle(this,mDrawerLayout,R.string.open,R.string.close);
-//                mDrawerLayout.addDrawerListener(mToggle);
-//                mToggle.syncState();
-//                break;
+
 
         }
         return super.onOptionsItemSelected(item);

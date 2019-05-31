@@ -11,6 +11,7 @@
     <color name="gray">#BBBBBB</color>
     <color name="voilet_light">#AB8BD1</color>
     <color name="voilet_navigation">#473262</color>
+    <color name="sky_blue">#00E5FF</color>
 
     <color name="black_tint">#40000000</color>
 </resources>

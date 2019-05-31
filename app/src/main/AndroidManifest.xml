@@ -9,11 +9,14 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".cart"></activity>
+        <activity android:name=".home"></activity>
+        <activity android:name=".addToBag" />
+        <activity android:name=".cart" />
         <activity android:name=".login_page" />
         <activity
             android:name=".productsPage"
-            android:theme="@style/Theme.AppCompat.DayNight.DarkActionBar" />
+            android:theme="@style/Theme.AppCompat.DayNight.DarkActionBar"
+            />
         <activity
             android:name=".login"
             android:theme="@style/Theme.AppCompat.Light.NoActionBar" />

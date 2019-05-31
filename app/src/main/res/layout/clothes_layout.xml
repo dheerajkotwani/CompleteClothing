@@ -10,32 +10,32 @@
 
         <ImageView
             android:id="@+id/layout_image"
-            android:layout_width="wrap_content"
-            android:layout_height="200dp"
+            android:layout_width="216dp"
+            android:layout_height="270dp"
             android:scaleType="centerCrop"
             android:src="@drawable/clothing1" />
 
         <TextView
             android:id="@+id/layout_name"
-            android:gravity="center"
-            android:textAlignment="center"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="NAME"
-            android:textColor="@color/black"
+            android:layout_marginTop="5dp"
             android:fontFamily="@font/roboto_regular"
-            android:layout_marginTop="5dp" />
+            android:gravity="center"
+            android:text="NAME"
+            android:textAlignment="center"
+            android:textColor="@color/black" />
+
 
         <TextView
             android:id="@+id/layout_price"
-            android:gravity="center"
-            android:textAlignment="center"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Price"
-            android:textColor="@color/gray"
+            android:layout_marginTop="5dp"
             android:fontFamily="@font/roboto_light"
-            android:layout_marginTop="5dp" />
+            android:text="Price"
+            android:textAlignment="center"
+            android:textColor="@color/gray" />
 
 
     </LinearLayout>
@@ -44,8 +44,10 @@
         android:id="@+id/fav_border_buton"
         android:layout_width="20dp"
         android:layout_height="20dp"
-        android:layout_marginTop="10dp"
-        android:layout_marginLeft="10dp"
+        android:layout_marginLeft="170dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/round"
+        android:padding="2dp"
         android:src="@drawable/fav_border"
         android:visibility="visible" />
 
@@ -53,8 +55,10 @@
         android:id="@+id/fav_button"
         android:layout_width="20dp"
         android:layout_height="20dp"
-        android:layout_marginTop="10dp"
-        android:layout_marginLeft="10dp"
+        android:layout_marginLeft="170dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/round"
+        android:padding="2dp"
         android:src="@drawable/fav_clicked"
         android:visibility="gone" />
 
