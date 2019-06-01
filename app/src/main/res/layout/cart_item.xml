@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="130dp"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="105dp"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/layout_image"
+            android:layout_width="90dp"
+            android:layout_height="match_parent"
+            android:src="@drawable/mentshirt1"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="5dp">
+        <TextView
+            android:id="@+id/layout_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:text="Name"/>
+
+            <TextView
+                android:id="@+id/layout_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="14sp"
+                android:text="Price"/>
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/gray_dark"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Remove"
+        android:textColor="@color/gray_dark"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:textSize="16sp"/>
+
+</LinearLayout>

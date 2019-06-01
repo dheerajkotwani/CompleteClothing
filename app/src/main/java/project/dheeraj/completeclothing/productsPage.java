@@ -3,6 +3,9 @@ package project.dheeraj.completeclothing;
 import androidx.appcompat.app.ActionBarDrawerToggle;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.drawerlayout.widget.DrawerLayout;
+import androidx.recyclerview.widget.LinearLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
+import androidx.recyclerview.widget.StaggeredGridLayoutManager;
 import androidx.swiperefreshlayout.widget.SwipeRefreshLayout;
 
 import android.content.Intent;
@@ -12,8 +15,12 @@ import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
+
+import java.util.ArrayList;
+import java.util.Arrays;
 
 public class productsPage extends AppCompatActivity {
 
@@ -21,6 +28,7 @@ public class productsPage extends AppCompatActivity {
     private ActionBarDrawerToggle mToggle;
     private SwipeRefreshLayout mSwipeLayout;
     private TextView shopNowText;
+    private ImageView bannerImage;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -28,11 +36,35 @@ public class productsPage extends AppCompatActivity {
         setContentView(R.layout.activity_products_page);
 
         shopNowText = findViewById(R.id.shop_now);
+        bannerImage = findViewById(R.id.banner_img);
 
         mDrawerLayout = findViewById(R.id.mDrawerLayout);
         mToggle = new ActionBarDrawerToggle(this,mDrawerLayout,R.string.open,R.string.close);
 
-//        mSwipeLayout = findViewById(R.id.swipeRefresh);
+        ArrayList mImages = new ArrayList<>(Arrays.asList(R.drawable.clothing1, R.drawable.clothing4, R.drawable.clothing5, R.drawable.clothing3,R.drawable.clothing6, R.drawable.clothing7));
+
+        final RecyclerView recyclerView =  findViewById(R.id.recycler_view);
+        StaggeredGridLayoutManager staggeredGridLayoutManager = new StaggeredGridLayoutManager(2, LinearLayoutManager.VERTICAL);
+        recyclerView.setLayoutManager(staggeredGridLayoutManager);
+
+        CustomAdapter customAdapter = new CustomAdapter(productsPage.this, mImages);
+        recyclerView.setAdapter(customAdapter);
+
+        recyclerView.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(productsPage.this,home.class);
+                startActivity(intent);
+            }
+        });
+
+        bannerImage.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(productsPage.this,home.class);
+                startActivity(intent);
+            }
+        });
 
 
         mDrawerLayout.addDrawerListener(mToggle);
@@ -77,7 +109,5 @@ public class productsPage extends AppCompatActivity {
         }
         return super.onOptionsItemSelected(item);
     }
-
-
 }
 

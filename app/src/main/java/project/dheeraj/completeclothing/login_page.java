@@ -17,9 +17,9 @@ public class login_page extends AppCompatActivity {
 
         mImageBackground = findViewById(R.id.image_background);
 
-        Blurry.with(login_page.this)
-                .capture(mImageBackground)
-                .into(mImageBackground);
+//        Blurry.with(login_page.this)
+//                .capture(mImageBackground)
+//                .into(mImageBackground);
 
 //        Blurry.with(this).radius(25).sampling(2).onto(ImageView);
     }

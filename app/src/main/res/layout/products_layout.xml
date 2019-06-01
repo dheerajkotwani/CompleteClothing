@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="280dp"
+    android:maxHeight="280dp"
+    android:layout_margin="2dp"
+    >
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="280dp"
+        android:padding="2dp"
+        android:scaleType="fitXY"
+        android:id="@+id/deals_img"
+        android:maxHeight="280dp"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Hot Deals"
+        android:gravity="center"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="60dp"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:background="@color/black_tint2"/>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:src="@drawable/border_white"/>
+
+</RelativeLayout>

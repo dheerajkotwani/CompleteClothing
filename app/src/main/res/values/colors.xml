@@ -14,4 +14,8 @@
     <color name="sky_blue">#00E5FF</color>
 
     <color name="black_tint">#40000000</color>
+    <color name="black_tint2">#60000000</color>
+    <color name="gray_dark">#686767</color>
+
+
 </resources>

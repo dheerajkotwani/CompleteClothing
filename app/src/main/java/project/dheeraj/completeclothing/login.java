@@ -30,6 +30,7 @@ public class login extends AppCompatActivity {
             public void onClick(View view) {
                 Intent intent = new Intent(login.this,productsPage.class);
                 startActivity(intent);
+                finish();
             }
         });
 
@@ -38,6 +39,7 @@ public class login extends AppCompatActivity {
             public void onClick(View view) {
                 Intent intent = new Intent(login.this,productsPage.class);
                 startActivity(intent);
+                finish();
             }
         });
 
@@ -46,6 +48,7 @@ public class login extends AppCompatActivity {
             public void onClick(View view) {
                 Intent intent = new Intent(login.this,productsPage.class);
                 startActivity(intent);
+                finish();
             }
         });
     }

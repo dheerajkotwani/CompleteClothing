@@ -8,10 +8,46 @@
         <item name="colorAccent">@color/voilet_light</item>
 
         <item name="android:fontFamily">@font/roboto_regular</item>
+        <item name="android:textViewStyle">@font/roboto_light</item>
+        <item name="actionBarTabTextStyle">@font/roboto_light</item>
+        <item name="android:actionMenuTextAppearance">@font/roboto_light</item>
 
 
         <!--<item name="android:textColor"-->
 
     </style>
+
+    <style name="AppTheme2" parent="Theme.AppCompat.DayNight.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/voilet_light</item>
+
+        <item name="android:fontFamily">@font/roboto_light</item>
+        <item name="android:textViewStyle">@font/roboto_light</item>
+        <item name="actionBarTabTextStyle">@font/roboto_light</item>
+        <item name="android:actionMenuTextAppearance">@font/roboto_light</item>
+
+
+        <!--<item name="android:textColor"-->
+
+    </style>
+
+    <style name="AppTheme3" parent="Theme.AppCompat.DayNight.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/voilet_light</item>
+
+        <item name="android:fontFamily">@font/roboto_regular</item>
+        <item name="android:textViewStyle">@font/roboto_light</item>
+        <item name="actionBarTabTextStyle">@font/roboto_light</item>
+        <item name="android:actionMenuTextAppearance">@font/roboto_light</item>
+
+
+        <!--<item name="android:textColor"-->
+
+    </style>
+
 
 </resources>

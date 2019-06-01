@@ -4,7 +4,7 @@
     android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="176dp"
-    android:background="@drawable/gradient_navigation">
+    android:background="@drawable/navigation_banner">
 
 
     <com.makeramen.roundedimageview.RoundedImageView
@@ -28,7 +28,7 @@
         android:textColor="@color/white"
         android:textSize="14dp"
         android:layout_marginLeft="16dp"
-        android:fontFamily="@font/roboto_light"
+        android:fontFamily="@font/roboto_regular"
         android:layout_marginTop="2dp"
         android:textStyle="bold"
         android:padding="2dp"/>
@@ -39,8 +39,9 @@
         android:text="dheeraj.kotwani41@gmail.com"
         android:textColor="@color/white"
         android:textSize="14dp"
+        android:textStyle="bold"
         android:layout_marginLeft="16dp"
-        android:fontFamily="@font/roboto_light"
+        android:fontFamily="@font/roboto_regular"
         android:padding="2dp"/>
 
 
